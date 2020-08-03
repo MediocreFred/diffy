@@ -26,8 +26,7 @@ java -ea                          \
   $JAVA_OPTS                      \
   -Djava.net.preferIPv4Stack=true \
   -XX:+AggressiveOpts             \
-  -XX:+UseParNewGC                \
-  -XX:+UseConcMarkSweepGC         \
+  -XX:+UseG1GC                    \
   -XX:+CMSParallelRemarkEnabled   \
   -XX:+CMSClassUnloadingEnabled   \
   -XX:ReservedCodeCacheSize=128m  \
